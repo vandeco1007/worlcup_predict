@@ -17,26 +17,18 @@
                 <table id="data-table">
                     <thead>
                         <td>Người chơi</td>
-                        <td>Chọn đội thắng 1</td>
-                        <td>Dự đoán kết quả 1</td>
-                        <td>Chọn đội thắng 2</td>
-                        <td>Dự đoán kết quả 2</td>
-                        <td>Chọn đội thắng 3</td>
-                        <td>Dự đoán kết quả 3</td>
-                        <td>Chọn đội thắng 4</td>
-                        <td>Dự đoán kết quả 4</td>
+                        <td>Trận 1</td>
+                        <td>Trận 2</td>
+                        <td>Trận 3</td>
+                        <td>Trận 4</td>
                     </thead>
                     <tbody>
                         <% database.forEach((item)=>{ %>
                             <tr>
                                 <td><%= item.playerId %></td>
-                                <td><%= item.team1 %></td>
                                 <td><%= item.result1 %></td>
-                                <td><%= item.team2 %></td>
                                 <td><%= item.result2 %></td>
-                                <td><%= item.team3 %></td>
                                 <td><%= item.result3 %></td>
-                                <td><%= item.team4 %></td>
                                 <td><%= item.result4 %></td>
                             </tr>
                         <% }) %>

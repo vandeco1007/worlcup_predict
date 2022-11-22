@@ -1,5 +1,6 @@
 let end = document.querySelectorAll('.end');
 let choices = document.querySelectorAll('.choices')
+let score = document.querySelectorAll('.score')
 
 end.forEach((item)=>{
     item.disabled = true;
@@ -8,4 +9,8 @@ end.forEach((item)=>{
 
 choices.forEach((choice)=>{
     choice.disabled=true
+})
+
+score.forEach((score)=>{
+    score.value=0
 })
