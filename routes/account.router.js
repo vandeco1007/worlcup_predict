@@ -4,7 +4,10 @@ const {
     signup,
     login
 } = require('../controllers/account.controller')
-const data = require('../controllers/data.controller')
+const {
+    getData,
+    deleteData
+} = require('../controllers/data.controller')
 const router = express.Router()
 
 router.route('/signup')
@@ -22,7 +25,10 @@ router.route('/login')
 
 router.route('/admin/data')
 .get(
-    data
+    getData
+)
+.delete(
+    deleteData
 )
 
 

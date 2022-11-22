@@ -216,10 +216,6 @@ body{
     margin: 10px;
 }
 
-.end{
-    filter: grayscale(1);
-}
-
 @media only screen and (max-width: 1080px) {
     .team-flag{
         width: 70px;
@@ -284,7 +280,7 @@ body{
     height: 250px;
     background-color: rgba(255, 255, 255, 0.842);
     overflow: auto;
-    
+
 }
 
 .notification:hover h1{
