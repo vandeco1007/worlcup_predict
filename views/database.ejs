@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/data.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="page-title">Kết quả dự đoán của người chơi</h1>
+        <button id="download-button"></button>
+        <div class="container">
+            <div class="table-container">
+                <table id="data-table">
+                    <thead>
+                        <td>Người chơi</td>
+                        <td>Chọn đội thắng 1</td>
+                        <td>Dự đoán kết quả 1</td>
+                        <td>Chọn đội thắng 2</td>
+                        <td>Dự đoán kết quả 2</td>
+                        <td>Chọn đội thắng 3</td>
+                        <td>Dự đoán kết quả 3</td>
+                        <td>Chọn đội thắng 4</td>
+                        <td>Dự đoán kết quả 4</td>
+                    </thead>
+                    <tbody>
+                        <% database.forEach((item)=>{ %>
+                            <tr>
+                                <td><%= item.playerId %></td>
+                                <td><%= item.team1 %></td>
+                                <td><%= item.result1 %></td>
+                                <td><%= item.team2 %></td>
+                                <td><%= item.result2 %></td>
+                                <td><%= item.team3 %></td>
+                                <td><%= item.result3 %></td>
+                                <td><%= item.team4 %></td>
+                                <td><%= item.result4 %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="/script/download.js"></script>
+    <script>
+    </script>
+</body>
+</html>

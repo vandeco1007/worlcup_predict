@@ -1,0 +1,20 @@
+#result-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0px;
+  background: rgba(245, 245, 245, 0.671);
+}
+
+#result-table td{
+  padding: 2%;
+  color: #0d1e32;
+  border:1px solid #0d1e32;
+}
+
+.result-title{
+  text-align: center;
+}
+
+.player-choices{
+  text-align: center;
+}

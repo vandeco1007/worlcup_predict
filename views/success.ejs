@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/resultPage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Quý Khách đã đăng ký thành công </h1>
+            <table id="result-table">
+                <tr>
+                    <td class="result-title" colspan="2"><h2>Lựa chọn của quý khách</h2></td>
+                </tr>
+                <tr>
+                    <td>Tài khoản người chơi</td>
+                    <td class="player-choices"><%= result.playerId%></td>
+                </tr>
+                <tr>
+                    <td>Lựa chọn 1</td>
+                    <td class="player-choices"><%= result.team1+" / "+result.result1%></td>
+                </tr>
+                <tr>
+                    <td>Lựa chọn 2</td>
+                    <td class="player-choices"><%= result.team2+" / "+result.result2%></td>
+                </tr>
+                <tr>
+                    <td>Lựa chọn 3</td>
+                    <td class="player-choices"><%= result.team3+" / "+result.result3%></td>
+                </tr>
+                <tr>
+                    <td>Lựa chọn 4</td>
+                    <td class="player-choices"><%= result.team4+" / "+result.result4%></td>
+                </tr>
+            </table>
+            <a href="/" class="exit">Trở lại trang dự đoán</a>
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>
