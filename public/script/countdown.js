@@ -1,9 +1,9 @@
 // Set the date we're counting down to
 
-countdown('team1-coundown',"Nov 22 2022 18:00:00 GMT+0800")
-countdown('team2-coundown',"Nov 22 2022 21:00:00 GMT+0800")
-countdown('team3-coundown',"Nov 23 2022 00:00:00 GMT+0800")
-countdown('team4-coundown',"Nov 23 2022 3:00:00 GMT+0800")
+countdown('team1-coundown',"Nov 23 2022 18:00:00 GMT+0800")
+countdown('team2-coundown',"Nov 23 2022 21:00:00 GMT+0800")
+countdown('team3-coundown',"Nov 24 2022 00:00:00 GMT+0800")
+countdown('team4-coundown',"Nov 24 2022 3:00:00 GMT+0800")
 
 function countdown(element,time){
     var countDownDate = new Date(time).getTime();
