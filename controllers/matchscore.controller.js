@@ -16,7 +16,6 @@ module.exports = async(req,res,next)=>{
             
             res.render("success",{result:create})
         }else{
-
             let result1 = []
             if(body.team1score==undefined){
                 result1[0] = checklist.result1
