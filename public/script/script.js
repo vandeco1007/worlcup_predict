@@ -18,3 +18,5 @@ score.forEach((items)=>{
 choices.forEach((choice)=>{
     choice.disabled=true
 })
+
+//Nothing to change
