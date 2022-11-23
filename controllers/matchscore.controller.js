@@ -5,6 +5,7 @@ module.exports = async(req,res,next)=>{
     let {...body} = req.body
     try {
         let checklist = await matchscore.findOne({ 'playerId': body.playerId })
+        console.log(checklist)
         if(!checklist){
             let choice = await option.find()
             let choiceValue = choice[0]
