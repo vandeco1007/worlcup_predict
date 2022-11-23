@@ -19,7 +19,7 @@ team.forEach((item)=>{
 
 choices.forEach((choice)=>{
     choice.disabled=true
-})
+}) 
 
 score.forEach((score)=>{
     score.value=0
