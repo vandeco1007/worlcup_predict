@@ -17,7 +17,6 @@ module.exports = async(req,res,next)=>{
                 result4: choiceValue.team7Name+" "+body.team7score+" - "+body.team8score+" "+choiceValue.team8Name,
             })
             // res.json(create)
-            
             res.render("success",{result:create})
         }else{
             res.render("failure",{result:"Quý khách đã lựa chọn"})
